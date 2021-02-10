@@ -1,0 +1,65 @@
+---
+
+typora-copy-images-to: ../../mis_assets/img/django/
+
+typora-root-url:  ../../
+
+layout: post
+
+---
+
+
+
+> > Para comenzar con la creacion de django nos crearemos un directorio vacio ( mkdir django en mi caso).
+
+> > A partir de aqui creamos un archivo Dockerfile, donde añadiremos todo el codigo que necesitemos para poder instalarlo.
+
+![](/DEV-OPS/mis_assets/img/django/1.png)
+
+> > Como se puede ver, en el archivo Dockerfile, necesitaremos un archivo .txt donde decirle que instalar mediante el pip, lo unico que tendremos que hacer es crear un archivo y añadirselo.(nano requirements.txt)
+
+
+
+![](/DEV-OPS/mis_assets/img/django/2.png)
+
+
+
+> > A partir de aqui teniendo ya la imagen del Dockerfile creada, nos pasamos a crear el docker-compose, y añadir dentro de el toda las modificaciones y instalaciones que queremos vease puertos, db, etc.
+
+> depende que version estemos corriendo tendremos que añadir una u otra ( en mi caso no correremos la 3.9 sino la 3.3)
+
+![](/DEV-OPS/mis_assets/img/django/3.png)
+
+
+
+> Cuando tengamos todo listo ,ejecutamos la orden que tenemos a continuacion para crear el proyecto, el cual nos creara una carpeta en el mismo directorio que estamos.
+
+
+
+> > Despues de haber ejecutado la orden tendremos que cambiar el usuario propietario de ellos, muy sencillo: sudo chown -R $USER:$USER . ( le diremos que en vez del usuario django ahora somos nosotros)
+
+![](/DEV-OPS/mis_assets/img/django/4.png)
+
+
+
+
+
+> > Editamos el archivo composeexample/settings.py que nos ha creado,  y añadimos en la parte de las bases de datos lo siguiente:
+> >
+> > > > ENGINE,NAME,USER,PASSWORD,HOST y PORT
+
+![](/DEV-OPS/mis_assets/img/django/5.png)
+
+
+
+> > Cuando tengamos todas las modificaciones listas, lo unico que tendremos que hacer es ejecutar el comando docker-compose up ( al igual que hemos echo en Wordpress ) para lanzarlo.
+
+![](/DEV-OPS/mis_assets/img/django/6.png)
+
+
+
+
+
+> Si todo ha ido bien , nos encontraremos que el servidor esta activo.( para entrar a el lo hacemos a traves de http://localhost:8000)
+
+![](/DEV-OPS/mis_assets/img/django/7.png)
