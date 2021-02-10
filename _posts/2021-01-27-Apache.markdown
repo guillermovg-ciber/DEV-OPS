@@ -10,7 +10,7 @@ layout: post
 
 Tarea 1:
 
-> ![T1_1](/DEV-OPS/_assets/img/Apache1/T1_1.png)
+> ![T1_1](/_assets/img/Apache1/T1_1.png)
 > 
 >
 > Captura de pantalla de los directorios website1 y website 2
@@ -18,31 +18,31 @@ Tarea 1:
 
 
 
->![T1_2](/DEV-OPS/_assets/img/Apache1/T1_2.png)
+>![T1_2](/_assets/img/Apache1/T1_2.png)
 > Captura de pantalla de la carpeta sites-avaliable y sites-enable de nuestro servidor Apache
 
-> ![T1_3](/DEV-OPS/_assets/img/Apache1/T1_3.png)
+> ![T1_3](/_assets/img/Apache1/T1_3.png)
 >Captura de pantalla del archivo hosts
 
 Tarea 2:
 
 
 
-> ![T2_1](/DEV-OPS/_assets/img/Apache1/T2_1.png)Comprobacion de un alias en el servidor apache
+> ![T2_1](/_assets/img/Apache1/T2_1.png)Comprobacion de un alias en el servidor apache
 
 
 
-> ![T2_2](/DEV-OPS/_assets/img/Apache1/T2_2.png)Archivo de configuracion con el alias /wiki
+> ![T2_2](/_assets/img/Apache1/T2_2.png)Archivo de configuracion con el alias /wiki
 
 
 
 Tarea 3:
 
-> ![T3_1](/DEV-OPS/_assets/img/Apache1/T3_1.png)Codigo 302
+> ![T3_1](/_assets/img/Apache1/T3_1.png)Codigo 302
 
 
 
 Tarea 4:
 
-> ![T4_1](/DEV-OPS/_assets/img/Apache1/T4_1.png)Comprobacion del archivo .htaccess mediante un Codigo 404
+> ![T4_1](/_assets/img/Apache1/T4_1.png)Comprobacion del archivo .htaccess mediante un Codigo 404
 
