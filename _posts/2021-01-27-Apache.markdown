@@ -10,7 +10,7 @@ layout: post
 
 Tarea 1:
 
-> ![T1_1](/guillermovg-ciber/_assets/img/Apache1/T1_1.png)
+> ![T1_1](/_assets/img/Apache1/T1_1.png)
 >
 > 
 >
