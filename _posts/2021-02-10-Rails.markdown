@@ -1,0 +1,77 @@
+---
+
+typora-copy-images-to: ../../mis_assets/img/rails/
+
+typora-root-url:  ../../
+
+layout: post
+
+---
+
+
+
+> Para comenzar la creacion de rails, primero que todo creamos una carpeta vacia (mkdir rails)
+>
+> A partir de aqui creamos su archivo Dockerfile dentro de la carpeta que vamos a usar y le añadimos todo lo que necesitaremos pe: node,postgres...
+
+![](/DEV-OPS/mis_assets/img/rails/1.png)
+
+
+
+> Por otro lado creamos un archivo Gemfile en el cual cargaremos Rails 
+>
+> > A la par tambien creamos el archivo Gemfile.lock para poder crear el mismo Dockerfile, este archivo ira vacio con lo cual mediante un  "touch Gemfile.lock" lo dejaremos listo
+
+![](/DEV-OPS/mis_assets/img/rails/2.png)
+
+
+
+> > Creamos un script, el cual lo que hara es lo siguiente. eliminara el archivo server.pid para que evite reinicios cada vez que el contenedor se inicie.
+
+![](/DEV-OPS/mis_assets/img/rails/3.png)
+
+
+
+>  A partir de aqui pasamos ya a crear nuestro archivo docker-compose.yml con la configuracion que necesitemos para poder iniciar correctamente Rails
+>
+> > > Como recordatorio , revisar la version ya que aunque marquemos "3.9" puede que os toque correr con la "3.3"
+
+![](/DEV-OPS/mis_assets/img/rails/4.png)
+
+
+
+> Cuando tengais todo el archivo docker-compose.yml listo ,lo unico que tenemos que hacer es crear el proyecto, mediante la orden 
+>
+> > Docker-compose run --no-deps web rails new . --force --database=postgresql
+
+![](/DEV-OPS/mis_assets/img/rails/5.png)
+
+
+
+>  Habiendo cargado todo ,lo unico que nos faltara cargar es el comando docker-compose build, pero antes de ello, le cambiamos el propietario a los archivos, ya que sino el propietario no somos nosotros sino el ( sudo chown -R $USER:$USER .)
+>
+> > Despues de cambiar el propietario ya si cargamos el comando docker-compose build
+
+![](/DEV-OPS/mis_assets/img/rails/6.png)
+
+
+
+> ​	Tras ejecutar el build, nos vamos a conectar la base de datos a Rails, entramos a la configuracion del archivo database.yml ( nano config/database.yml) y modificamos el apartado default para añadirle el usuario,password, host y pool.
+
+![](/DEV-OPS/mis_assets/img/rails/7.png)
+
+
+
+> Si todo ha ido bien, ejecutamos el comando en otro terminal la orden 
+>
+> sudo docker-compose run web rake db:create
+
+![](/DEV-OPS/mis_assets/img/rails/8.png)
+
+
+
+> Al ejecutar esa orden el mismo servidor ya estara activo y su base de datos creada y podremos acceder a ella
+>
+> Para acceder al servicio solamente tendremos que irnos al navegador y colocar la dirección https://localhost:3000)
+
+![](/DEV-OPS/mis_assets/img/rails/9.png)
