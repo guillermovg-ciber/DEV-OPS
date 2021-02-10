@@ -1,8 +1,8 @@
 ---
 
-typora-copy-images-to: ../../../../_assets/img/Apache1/
+typora-copy-images-to: ../../_assets/img/Apache1/
 
-typora-root-url:  ../../../../
+typora-root-url:  ../../
 
 layout: post
 
