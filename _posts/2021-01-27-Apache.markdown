@@ -11,14 +11,14 @@ layout: post
 Tarea 1:
 
 > ![T1_1](/_assets/img/Apache1/T1_1.png)
->
+>![T1_2](/_assets/img/Apache1/T1_2.png)
 > 
 >
 > Captura de pantalla de los directorios website1 y website 2
 
 
 
-![T1_2](/_assets/img/Apache1/T1_2.png)
+
 
 > Captura de pantalla de la carpeta sites-avaliable y sites-enable de nuestro servidor Apache
 
