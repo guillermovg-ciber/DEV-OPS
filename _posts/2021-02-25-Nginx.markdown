@@ -1,0 +1,81 @@
+Nginx
+
+
+
+> Practica nginx
+>
+> > Instalacion
+
+Descargamos la imagen de nginx y la ejecutaremos en un terminal:
+
+![](/DEV-OPS/mis_assets/img/nginx/1.png)
+
+
+
+![](/DEV-OPS/mis_assets/img/nginx/2.png)
+
+
+
+Al comprobar en el navegador en la direcion http://localhost:8080 vemos que funciona correctamente el servidor nginx.
+
+
+
+![](/DEV-OPS/mis_assets/img/nginx/3.png)
+
+En el caso de querer pararla solamente tendremos introducir la orden:
+
+```bash
+sudo docker stop web
+```
+
+
+
+![](/DEV-OPS/mis_assets/img/nginx/4.png)
+
+
+
+
+
+Agregar HTML personalizado
+
+
+
+Si quisieramos agregar una pagina personalizada de html y publicarla en Nginx tendriamos  que hacer:
+
+> > Crear un documento donde queramos guardar la pagina web, y luego llamarla mediante un volumen
+
+![](/DEV-OPS/mis_assets/img/nginx/5.png)
+
+
+
+Al comprobar otra vez en http://localhost:8080 vemos que el index que venia predefinido en nginx ahora se ha cambiado por el creado por nosotros.
+
+![](/DEV-OPS/mis_assets/img/nginx/6.png)
+
+Creacion de una imagen personalizada
+
+
+
+Creamos un Dockerfile el cual llevara las lineas que necesitemos, en nuestro caso :
+
+```bash
+FROM nginx:latest
+```
+
+```bash
+COPY ./site-content/index.html /usr/share/nginx/html/index.html
+```
+
+A partir de aqui lo unico que necesitaremos es ejecutar el comando para crear la imagen que estamos montando:
+
+![](/DEV-OPS/mis_assets/img/nginx/7.png)
+
+
+
+Ejecutamos la imagen y comprobamos si nos funciona via navegador en la direccion http://localhost:8080
+
+![](/DEV-OPS/mis_assets/img/nginx/8.png)
+
+
+
+![](/DEV-OPS/mis_assets/img/nginx/9.png)
