@@ -14,7 +14,7 @@
 
 Creamos una pagina Web mediante un servidor en docker, la cual nos permitira subir post, en principio con el codigo puesto ,estaria correcto pero nos podria colocar scripts por dentro que harian que los datos estuvieran comprometidos.
 
-![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/Validacion/1.png)
+![](/DEV-OPS/mis_assets/img/Validacion/1.png)
 
 La forma de solucionar este problema es sencilla : 
 
@@ -28,7 +28,7 @@ Si añadimos el siguiente texto conseguiremos que todo lo que entre dentro del  
 	echo htmlspecialchars($_POST["textarea"]) ?? "";
 ```
 
-![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/Validacion/2.png)
+![](/DEV-OPS/mis_assets/img/Validacion/2.png)
 
 
 
@@ -38,7 +38,7 @@ Al acceder a nuestra sesion , estamos logeandonos mediante una cookie la cual no
 
 
 
-![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/Validacion/3.png)
+![](/DEV-OPS/mis_assets/img/Validacion/3.png)
 
 
 
@@ -46,11 +46,11 @@ En el caso de que nos la robaran mediante XSS, lo que consiguen es tener acceso 
 
 
 
-![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/Validacion/4.png)
+![](/DEV-OPS/mis_assets/img/Validacion/4.png)
 
 
 
-![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/Validacion/5.png)
+![](/DEV-OPS/mis_assets/img/Validacion/5.png)
 
 
 
@@ -60,7 +60,7 @@ En el caso de que nos la robaran mediante XSS, lo que consiguen es tener acceso 
 
 En este caso, lo que trata es que el usuario al logearse en una pagina web(no fiable)  se esta logeando con una cookie fijada por el mismo atacante, el cual mediante esa cookie podra suplantarnos despues ya que no cambia.
 
-![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/Validacion/6.png)
+![](/DEV-OPS/mis_assets/img/Validacion/6.png)
 
 
 
@@ -72,7 +72,7 @@ PHPSESSID=HOLA
 
 obtiene acceso a nuestra sesion cuando el decida.
 
-![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/Validacion/7.png)
+![](/DEV-OPS/mis_assets/img/Validacion/7.png)
 
 > > Control de acceso por autorizacion
 
@@ -82,7 +82,7 @@ En este caso utilizaremos el principio de autenticacion por autorizacion, consig
 
 ​	Asignamos al usuario juan al grupo USER
 
-![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/Validacion/8.png)
+![](/DEV-OPS/mis_assets/img/Validacion/8.png)
 
 
 
@@ -90,13 +90,13 @@ Al logearnos mediante el usuario mario, comprobamos que el mismo tiene acceso a 
 
 
 
-![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/Validacion/9.png)
+![](/DEV-OPS/mis_assets/img/Validacion/9.png)
 
 
 
 
 
-![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/Validacion/10.png)
+![](/DEV-OPS/mis_assets/img/Validacion/10.png)
 
 
 
@@ -116,7 +116,7 @@ Mediante el ingreso del codigo
 
 en la pagina donde a accedido el usuario mario pensando que era la pagina de su banco legitimo, el atacante ha añadido  que desde la misma pagina se le envie una cantidad de dinero a su misma cuenta.
 
-![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/Validacion/11.png)
+![](/DEV-OPS/mis_assets/img/Validacion/11.png)
 
 
 
@@ -132,5 +132,5 @@ El mismo script, lo que hace es redirigirme a otra pagina con la apariencia de s
 
 
 
-![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/Validacion/12.png)
+![](/DEV-OPS/mis_assets/img/Validacion/12.png)
 
