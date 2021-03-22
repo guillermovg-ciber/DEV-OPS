@@ -10,11 +10,11 @@ Para ellos tendremos que retirar el modulo mod_autoindex de nuestro archivo Dock
 
 
 
-![]()
+![](/DEV-OPS/mis_assets/img/Hardening/1.1.png))
 
 
 
-![]()
+![](/DEV-OPS/mis_assets/img/Hardening/1.png))
 
 
 
@@ -22,8 +22,6 @@ Tras eliminar el mod_autoindex, tambien evitamos que el servidor al preguntarle,
 
 
 
-![]()
+![](/DEV-OPS/mis_assets/img/Hardening/1.1.png))
 
-![]()
-
-![]()
+![](/DEV-OPS/mis_assets/img/Hardening/2.png))
