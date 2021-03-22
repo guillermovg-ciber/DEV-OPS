@@ -32,7 +32,7 @@ Tras eliminar el mod_autoindex, tambien evitamos que el servidor al preguntarle,
 
 
 
-![](./DEV-OPS/mis_assets/img/Hardening/1.1.png)
+![](/DEV-OPS/mis_assets/img/Hardening/1.1.png)
 
 ![](/DEV-OPS/mis_assets/img/Hardening/2.png)
 
