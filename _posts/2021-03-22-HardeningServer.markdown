@@ -10,8 +10,8 @@ Para ellos tendremos que retirar el modulo mod_autoindex de nuestro archivo Dock
 
 
 
-![](/DEV-OPS/mis_assets/img/Hardening/1.1.png))
-
+![](/DEV-OPS/mis_assets/img/HArdening/1.1.png)
+![T1_1](/DEV-OPS/mis_assets/img/Apache1/T1_1.png)
 
 
 ![](/DEV-OPS/mis_assets/img/Hardening/1.png))
