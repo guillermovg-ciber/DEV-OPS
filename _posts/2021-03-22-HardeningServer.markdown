@@ -1,3 +1,13 @@
+---
+
+typora-copy-images-to: ../../mis_assets/img/Apache1/
+
+typora-root-url:  ../../
+
+layout: post
+
+---
+
 > Hardening del Servidor
 
 Como queremos cumplir los requisitos de minima exposición vamos a eliminar modulos que no vayamos a utilizar.
