@@ -1,6 +1,6 @@
 ---
 
-typora-copy-images-to: ../../mis_assets/img/Apache1/
+typora-copy-images-to: ../../mis_assets/img/Hardening/
 
 typora-root-url:  ../../
 
