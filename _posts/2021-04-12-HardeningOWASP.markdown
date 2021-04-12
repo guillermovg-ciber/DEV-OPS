@@ -1,4 +1,12 @@
+---
 
+typora-copy-images-to: ../../mis_assets/img/Hardening/
+
+typora-root-url:  ../../
+
+layout: post
+
+---
 
 || Reglas OWASP
 
@@ -12,7 +20,7 @@
 
    
 
-![1](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/OWASP/1.png)
+![1](/DEV-OPS/mis_assets/img/OWASP/1.png)
 
 
 
@@ -22,17 +30,17 @@
 sudo apt-get install libapache2-mod-security2 -y
 ```
 
-![1](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/OWASP/2.png)
+![1](/DEV-OPS/mis_assets/img/OWASP/2.png)
 
 
 
 3. Movemos el archivo por defecto a nuestra carpeta creada para las reglas.
 
-![1](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/OWASP/3.png)
+![1](/DEV-OPS/mis_assets/img/OWASP/3.png)
 
 4. Y despues movemos las reglas que vienen ya por defecto
 
-![1](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/OWASP/4.png)
+![1](/DEV-OPS/mis_assets/img/OWASP/4.png)
 
 
 
@@ -43,7 +51,7 @@ IncludeOptional /etc/modsecurity/*.conf
 Include /etc/modsecurity/rules/*.conf
 ```
 
-![1](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/OWASP/5.png)
+![1](/DEV-OPS/mis_assets/img/OWASP/5.png)
 
 
 
@@ -54,7 +62,7 @@ SecRuleEngine On
 SecRule ARGS:testparam "@contains test" "id:1234,deny,status:403,msg:"mensaje"
 ```
 
-![1](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/OWASP/6.png)
+![1](/DEV-OPS/mis_assets/img/OWASP/6.png)
 
 
 
@@ -66,5 +74,5 @@ SecRule ARGS:testparam "@contains test" "id:1234,deny,status:403,msg:"mensaje"
 
    
 
-![1](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/OWASP/7.png)
+![1](/DEV-OPS/mis_assets/img/OWASP/7.png)
 
