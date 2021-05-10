@@ -50,7 +50,6 @@ UNION SELECT NULL,NULL, NULL-
 
 +UNION+SELECT+BANNER,+NULL+FROM+v$version--
 
-![(/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/SQL inyection/4.png)
 
 
 
