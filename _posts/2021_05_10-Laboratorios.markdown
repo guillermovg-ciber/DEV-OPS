@@ -14,7 +14,7 @@ layout: post
 https://ac241f1c1e1c928a80cc0b910061008d.web-security-academy.net/filter?category=gifts'+OR+1=1-
 ```
 
-![1](/DEVOPS/DEV-OPS/mis_assets/img/SQL inyection/1.png)
+![1](/DEV-OPS/mis_assets/img/SQL inyection/1.png)
 
 
 
