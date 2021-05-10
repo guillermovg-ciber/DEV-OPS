@@ -1,0 +1,49 @@
+> > > ZAP LOGIN 
+
+
+
+> Paso 1:
+
+Selecionamos la dirección la cual vamos a atacar.
+
+![1](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/ZAP login/1.png)
+
+
+
+Paso 2:
+
+Al empezar el ataque tenemos distintas opciones, en nuestro caso, usaremos principalmente el scan para obtener todas las paginas que posea el sitio expuesto.
+
+![2](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/ZAP login/2.png)
+
+
+
+Paso 3:
+
+Al lanzar el scan, obtenemos que el sitio en este caso tiene diferentes paginas expuestas, nosotros nos dedicaremos a las que contengan informacion importante(login,userinfo,etc...).
+
+![2.1](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/ZAP login/2.1.png)
+
+
+
+Paso 4:
+
+Cargamos el login, y mediante el Zapp y mediante un dicionario atacamos la pagina web para obtener un usuario del sistema que si este autenticado.
+
+![4](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/ZAP login/4.png)
+
+
+
+Paso 5:
+
+Al lanzarlo, vemos que va haciendo pruebas y combinaciones con los usuarios y contraseñas presentes en el diccionario, los cuales si alguno cuadra en la categoria codigo nos dara un OK.
+
+![](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/ZAP login/5.png)
+
+
+
+Paso 6:
+
+En nuestro caso nos ha dado OK la configuración de usuario y contraseña "test:test", al comprobar via navegador vemos que el usuario si existe y esta autenticado, con lo cual obtenemos toda la información confidencial que tenga incorporada el usuario.
+
+![6](/home/usuari2/Escriptori/DEVOPS/DEV-OPS/mis_assets/img/ZAP login/6.png)
